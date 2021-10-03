@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Device - интернет-магазин</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
@@ -80,7 +81,7 @@
       </header>
 
       <section class="catalog-products">
-        <h2 class="catalog-filter">Фильтр</h2>
+        <h2 class="catalog-filter-main-title">Фильтр</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -160,11 +161,11 @@
                   <span class="control-mark"></span>
               <span class="control-label">Нет</span>
                 </label>
-          <button class="button" type="submit">Показать</button>
+          <button class="button-show" type="submit">Показать</button>
         </form> 
         </section>
   <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
+          <label class="sort" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярные</option>
             <option value="cheap">Сначала недорогие</option>
@@ -277,7 +278,7 @@
           </li>
         </ul>
       </section>
-       <img class="footer-contacts-logo" src="img/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
+      <a class="link-html" href="#"><img class="footer-contacts-logo" src="img/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
     </footer>
   </body>
 </html>
