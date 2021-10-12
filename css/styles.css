@@ -30,18 +30,34 @@
     src: url('../fonts/rubik-800.woff2') format('woff2');
     font-display: swap;
   }
-  
+
+  html {
+    height: 100%;
+  }
+
+
  body {
-   font-family: 'rubik';
-   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'rubik';
+  font-size: 18px;
   line-height: 30px;
   color: #000000;
   background-color:#E5E5E5;
+  min-height: 100%;
+  width: 1440px;
+  margin: auto;
  }
 
+ .main-container {
+  flex-grow: 1;
+}
+
  .main-page-header {
+   width: 1160px;
    color: #000000;
    background-color: #FFE17F;
+   margin: 0 140px;
  }
 
  /* почему-то ссылки все равно подсвечиваются фиолетовым =(*/
@@ -188,6 +204,7 @@
     text-decoration: none;
     color:inherit;
     background-color:inherit;
+    padding: 0;
 }
 
 .main-page-faq {
@@ -493,6 +510,281 @@ div.rare-delivery-info {
   background-image:url("../img/delivery-2.svg");
   background-size: 136px 164px;
   background-position: left;
+
+}
+
+.container-logo {
+  display:flex;
+  width: 180px;
+  margin-left: 201px;
+}
+
+.navigation-container-1 {
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.search-header {
+  width: 480px;
+  margin-right: auto;
+  padding: auto;
 }
 
 
+.navigation-container-2 {
+  width: 1160px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.navigation-catalog-menu {
+  width: 250px;
+  padding: auto;
+  margin-right: auto;
+}
+
+
+.main-page-slider-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 140px;
+}
+
+.gallery-slide {
+  width: 560px;
+}
+
+.full-description {
+  width: 560px;
+  list-style: none
+}
+
+
+
+.main-page-slider-2{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 140px;
+
+
+
+}
+
+.main-page-slider-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 140px;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.main-page-goods {
+  display: flex;
+  width: 1160px;
+  justify-content:center;
+  list-style: none;
+  margin: 0 140px;
+
+}
+
+.main-page-good-1{
+  width: 160px;
+  margin-right: 40px;
+  margin-left: 0%;
+
+}
+
+.main-page-good-2{
+  width: 160px;
+  margin-right: 40px;
+}
+
+.main-page-good-3{
+  width: 160px;
+  margin-right: 40px;
+}
+.main-page-good-4{
+  width: 160px;
+  margin-right: 40px;
+}
+
+.main-page-good-5{
+  width: 160px;
+  margin-right: 40px;
+}
+
+.main-page-faq {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-description {
+  width: 497px;
+  margin-left: 116px;
+  margin-left: 75px;
+}
+
+.fag-menu {
+  width: 280px;
+  margin-left: 140px;
+}
+
+.faq-delivery {
+  width: 146px;
+  margin-right: 210px;
+}
+
+.rare-delivery {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 140px;
+  padding: 0;
+}
+
+.rare-delivery-info-title {
+  flex-grow: 1;
+}
+
+.rare-delivery-info {
+margin-right: 33px;
+}
+
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 140px;
+  padding: 0 40px;
+}
+
+.about-us {
+  width: 560px;
+}
+
+.contacts{
+  width: 560px;
+}
+
+.subscribe {
+  width: 1440px;
+}
+
+.title-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-title {
+  width: 560px;
+  margin-left: 140px;
+}
+
+.subscribe-description {
+  width: 560px;
+  margin-right: 140px;
+  margin-left:40px;
+}
+
+.newsletter-form { 
+  display: flex;
+  justify-content: space-around;
+}
+
+.newsletter-email {
+  width: 560px;
+  margin-left: 140px;
+  margin-right: 40px;
+}
+
+.newsletter-free {
+  margin-right: 136px;
+  margin-left: 140px;
+
+}
+
+.button.newsletter-button {
+  width: 260px;
+}
+
+.page-footer-container-1 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.about-text {
+  margin-left: 139px;
+  width: 238px;
+  margin-right: auto;
+}
+
+.navigation-item-footer {
+  width: 444px;
+  margin-left: 114px;
+  margin-right: 58px;
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-phone{
+  width: 293px;
+  margin-right: 140px;
+}
+
+.page-footer-container-2{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-list {
+  margin-left: 645px;
+  margin-right: 392px;
+  list-style: none;
+}
+
+.footer-contacts-logo {
+  margin-right: 140px;
+}
+
+.footer-contacts-logo-device {
+  margin-left: 138px;
+  padding: 0%;
+}
+
+.catalog-products {
+  display: flex;
+  margin:0;
+}
+
+.catalog-filter-main-title {
+  width: 468px;
+  margin: 0;
+  margin-left: 200px;
+}
+.catalog-filter-container{
+  margin-left: 199px;
+  width: 200px;
+  margin-right: 69px;
+}
+
+.inner-header {
+  margin-left: 200px;
+}
+
+.catalog-right-column {
+  width: 972px;
+}
