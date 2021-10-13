@@ -43,11 +43,22 @@
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  background-color:#E5E5E5;
+  background-color: #FFFFFF;
   min-height: 100%;
   width: 1440px;
   margin: auto;
  }
+
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
  .main-container {
   flex-grow: 1;
@@ -55,23 +66,81 @@
 
  .main-page-header {
    width: 1160px;
+   height: 300px;
    color: #000000;
    background-color: #FFE17F;
    margin: 0 140px;
+   margin-top: 40px;
  }
 
+ .catalog-page-header {
+  width: 1160px;
+  color: #000000;
+  background-color: #FFE17F;
+  margin: 0 140px;
+  margin-top: 40px;
+}
+
+ .logo {
+  width: 145px;
+  margin-top: -60px;
+  margin-left: 61px;
+ }
+
+
  /* почему-то ссылки все равно подсвечиваются фиолетовым =(*/
+
+ ul.navigation-list-header-1{
+   display: flex;
+   padding: 0 15px;
+   list-style-type: none;
+
+ }
+
+ ul.navigation-list-header-2{
+  display: flex;
+  padding: 0 15px;
+  list-style-type: none;
+}
+
+a.navigation-link {
+  margin: 0 15px;
+}
+
+a.navigation-link-2 {
+  margin: 0 15px;
+}
 
  .navigation-catalog-menu {
    font-family:'raleway';
    line-height: 22px;
    font-weight: 800;
+   font-size: 18px;
    text-transform: uppercase; 
    text-decoration: none;
    color:black;
    background-color:inherit;
+   display: flex;
+   align-items: center;
    
  }
+
+h2.catalog-menu-title  {
+   width: 236px;
+   font-size: 18px;
+   line-height: 22px;
+   font-weight: 800;
+ } 
+
+ 
+ .navigation-link-buttom {
+  width: 57px;
+  height: 50px;
+  background-image:url("../img/buttom_pluse.svg");
+  background-position: center;
+  border: 0;
+
+}
 
  .navigation-list-header-2 {
   font-family:'raleway';
@@ -83,7 +152,7 @@
   background-color:inherit;
  }
 
- .number-1 {
+ h2.number-1 {
   font-family:'rubik';
   font-size: 180px;
   line-height: 30px;
@@ -91,9 +160,16 @@
   text-transform: uppercase;
   text-decoration: none;
   color:#FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  margin-right:49px;
+  margin-top: 80px;
+
  }
 
- .slider-1{
+
+
+ .slider-1-title{
   font-family:'raleway';
   font-size: 50px;
   line-height: 50px;
@@ -101,6 +177,15 @@
   text-decoration: none;
   color:inherit;
   background-color:inherit;
+  margin-top: -150px;
+ }
+
+li {
+   list-style: none;
+ }
+
+ .description-container-1 {
+   display: flex;
  }
  
  .description-link-1 {
@@ -121,7 +206,7 @@
   background-color:inherit;
   }
 
- .number-2 {
+ h2.number-2 {
   font-family:'rubik';
   font-size: 180px;
   line-height: 30px;
@@ -129,9 +214,15 @@
   text-transform: uppercase;
   text-decoration: none;
   color:#FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  margin-left:49px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right:49px;
  }
 
- .slider-2{
+ .slider-2-title{
   font-family:'raleway';
   font-size: 50px;
   line-height: 50px;
@@ -139,6 +230,7 @@
   text-decoration: none;
   color:inherit;
   background-color:inherit;
+  margin-top: -150px;
  }
 
  .description-link-2 {
@@ -159,7 +251,7 @@
   background-color:inherit;
   }
 
-  .number-3 {
+  h2.number-3 {
     font-family:'rubik';
     font-size: 180px;
     line-height: 30px;
@@ -167,9 +259,15 @@
     text-transform: uppercase;
     text-decoration: none;
     color:#FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    margin-left:49px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right:49px;
    }
   
-   .slider-3{
+   .slider-3-title{
     font-family:'raleway';
     font-size: 50px;
     line-height: 50px;
@@ -177,6 +275,7 @@
     text-decoration: none;
     color:inherit;
     background-color:inherit;
+    margin-top: -150px;
    }
   
    .description-link-3 {
@@ -549,7 +648,7 @@ div.rare-delivery-info {
 .main-page-slider-1 {
   display: flex;
   justify-content: space-between;
-  margin: 0 140px;
+  margin: -150px 140px;
 }
 
 .gallery-slide {
@@ -566,7 +665,7 @@ div.rare-delivery-info {
 .main-page-slider-2{
   display: flex;
   justify-content: space-between;
-  margin: 0 140px;
+  margin: 0px 140px;
 
 
 
@@ -575,7 +674,7 @@ div.rare-delivery-info {
 .main-page-slider-3 {
     display: flex;
     justify-content: space-between;
-    margin: 0 140px;
+    margin: 0px 140px;
 }
 
 li {
