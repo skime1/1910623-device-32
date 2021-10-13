@@ -567,6 +567,9 @@ div.rare-delivery-info {
   line-height: 19px;
   font-weight: 800;
   text-align: center;
+  margin-right: 140px;
+  margin-left: 72px;
+
 }
 
 .pagination-link{
@@ -886,4 +889,12 @@ ul {
 
 .catalog-right-column {
   width: 972px;
+}
+
+ul.product-list {
+margin-left: 72px;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+column-gap: 40px;
 }
