@@ -7,14 +7,16 @@
   </head>
 
   <body>
-    <h1 class="visually-hidden">Device - интернет-магазин</h1>
-    <img class="logo" src="img/main-logo.svg" alt="Логотип интернет-магазина Device" width="145" height="36">
-    <header class="main-page-header">
+    <h1 class="visually-hidden" hidden>Device - интернет-магазин</h1>
+    
+    <header class="catalog-page-header">
+      <img class="logo" src="img/main-logo.svg" alt="Логотип интернет-магазина Device" width="145" height="36">
       <nav class="navigation">
+        <div class="navigation-container-1">
         <section class="search-header">
         <form>
         <input type="text" placeholder="Поиск по сайту">
-        <button class="visually-hidden" type="submit">Поиск по сайту</button>
+        <button class="visually-hidden" type="search" >Поиск по сайту</button>
        </form>
       </section>
       <section class="navigation-list-header-1">
@@ -39,27 +41,30 @@
           </li>
         </ul>
       </section>
-      <h2>Каталог товаров</h2> <a class="navigation-link-menu" href="#">
-              <span class="visually-hidden">
-                Меню
-              </span>
+    </div>
+    <div class="navigation-container-2"><section class="navigation-catalog-menu"> <h2 class="catalog-menu-title">Каталог товаров</h2> 
+      <button class="navigation-link-menu" type="submit">
+        <span>Меню</span>
+      </button>
+      </section>
       <section class="navigation-list-header-2">
         <ul class="navigation-list-header-2">
           <li class="navigation-item-2">
-            <a class="navigation-link" href="">
+            <a class="navigation-link-2" href="">
               <span class="navigation-link">Доставка</span>
             </a>
           </li>
           <li class="navigation-item-2">
-            <a class="navigation-link" href="">
+            <a class="navigation-link-2" href="">
               <span class="navigation-link">Гарантия</span>
             </a>
           </li>
           <li class="navigation-item-2">
-            <a class="navigation-link" href="">Оплата</a>
+            <a class="navigation-link-2" href="">Оплата</a>
           </li>
         </ul>
       </section>
+      </div>
       </nav>     
     </header>
 
@@ -80,9 +85,10 @@
         </ul>
       </header>
 
+      <h2 class="catalog-filter-main-title">Фильтр</h2>
       <section class="catalog-products">
-        <h2 class="catalog-filter-main-title">Фильтр</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="catalog-filter-container"> 
+       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
             <button class="range-toggle toggle-min" type="button">
@@ -163,8 +169,9 @@
                 </label>
           <button class="button-show" type="submit">Показать</button>
         </form> 
-        </section>
-  <form class="sorting-type">
+      </div> 
+      <div class="catalog-right-column">
+ <div class="catalog-img"><form class="sorting-type">
           <label class="sort" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярные</option>
@@ -208,7 +215,7 @@
             <b class="product-card-price">4900 ₽</b>
           </li>
 
-          <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+          <button class="button pagination-show-more" type="button" style="width: 100%;">Загрузить ещё</button>
 
           <ul class="pagination">
           <li class="pagination-item">
@@ -237,48 +244,49 @@
             </a>
           </li>
         </ul>
+      </div>
+      </div> 
+      </section>
     </main>
-      <footer class="page-footer">
-      <section class="footer-contacts-address">
-        <h2 class="visually-hidden">Контакты</h2>
-        <img class="footer-contacts-logo" src="img/footer-logo.svg" width="145" height="36"  alt="Логотип интернет-магазин Device">
-        <address class="footer-contacts-address">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </section>
-      <section class="footer-navigation">
-       <ul class="navigation-list-footer">
-          <li class="navigation-item-footer">
-            <a class="navigation-link-footer" href="">Доставка</a>
-          </li>
-          <li class="navigation-item-footer-2">
-            <a class="navigation-link-footer-2" href="">Гарантия</a>
-          </li>
-          <li class="navigation-item-footer-3">
-            <a class="navigation-link-footer-3" href="">Оплата</a>
-          </li>
-        </ul>
-        </section>
-       <p> Тел.:<a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a></p>
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <a class="link-html" href="#"><img class="footer-contacts-logo" src="img/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML Academy"></a>
-    </footer>
+    <footer class="page-footer">
+      <h2 class="visually-hidden" hidden>Контакты</h2>
+      <img class="footer-contacts-logo-device" src="img/footer-logo.svg" width="145" height="36" alt="Логотип интернет-магазин Device">
+      <address class="footer-contacts-address">
+        <div class="page-footer-container-1">
+        <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+     <ul class="navigation-list-footer">
+        <li class="navigation-item-footer">
+          <a class="navigation-link-footer" href="">Доставка</a>
+        </li>
+        <li class="navigation-item-footer">
+          <a class="navigation-link-footer-2" href="">Гарантия</a>
+        </li>
+        <li class="navigation-item-footer">
+          <a class="navigation-link-footer-3" href="">Оплата</a>
+        </li>
+      </ul>
+     <p> Тел.:<a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a></p>
+    </div>
+    <section class="page-footer-container-2">
+      <ul class="footer-social-list">
+        <li class="footer-social-item-1">
+          <a class="button" href="#">
+            <span class="Facebook">Facebook</span>
+          </a>
+        </li>
+        <li class="footer-social-item-2">
+          <a class="button" href="#">
+            <span class="Instagram">Instagram</span>
+          </a>
+        </li>
+        <li class="footer-social-item-3">
+          <a class="button" href="#">
+            <span class="Twitter">Twitter</span>
+          </a>
+        </li>
+      </ul>
+    <a class="link-html" href="#"><img class="footer-contacts-logo" src="img/htmlacademy-logo.svg" width="115" height="33" alt="Логотип HTML Academy"></a> 
+    </section>
+  </footer>
   </body>
 </html>
